@@ -19,4 +19,9 @@ RewriteRule ^(.*)$ https://yourdomain.com/$1?wmc-currency=USD [L,NE,R=301]
 ```
 Check with your hosting if this functionality is activated.
 
+You can add query string to all URLs for products with snippet in add-currency-query-string.php.
+This will change in HTML /product/soap/ to /product/soap/?wmc-currency=usd so no redirect will happened for browsing users.
+
+```require_once ( 'add-currency-query-string.php' );```
+
 I hope it will help.
